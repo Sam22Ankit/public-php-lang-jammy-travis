@@ -1,5 +1,4 @@
-os: linux
-dist: rhel8
+os: RHEL
 language: php
 php:
   - '7.3.32'
