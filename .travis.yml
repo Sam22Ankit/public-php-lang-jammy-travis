@@ -6,7 +6,7 @@ jobs:
       virt: vm
       arch: amd64
       php:
-        - '7.4.30'
+        - '8.1.0'
       script:
         - php hello_world.php
     - dist: jammy
@@ -14,7 +14,7 @@ jobs:
       virt: lxd
       arch: amd64
       php:
-        - '7.4.30'
+        - '8.1.0'
       script:
         - php hello_world.php
     - dist: bionic
