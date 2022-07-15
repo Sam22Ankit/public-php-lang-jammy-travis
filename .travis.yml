@@ -1,8 +1,19 @@
 os: linux
-dist: rhel8
-language: php
-php:
-  - '7.3.32'
-arch: amd64
-script:
-  - php hello_world.php
+jobs:
+  include:
+    - dist: jammy
+      language: php
+      virt: vm
+      arch: amd64
+      php:
+        - '7.4.30'
+      script:
+        - php hello_world.php
+    - dist: jammy
+      language: php
+      virt: lxd
+      arch: amd64
+      php:
+        - '7.4.30'
+      script:
+        - php hello_world.php
